@@ -1,4 +1,4 @@
-project = "example-python-test"
+project = "example-python"
 
 app "example-python" {
   labels = {
