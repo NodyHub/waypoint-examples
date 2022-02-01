@@ -8,8 +8,8 @@ app "example-python" {
 
   build {
     use "docker" {
-      build_args = {
-        foo="bar"
+      build_args {
+        foo = "bar"
     }
     # hook {
     #   when    = "after"
