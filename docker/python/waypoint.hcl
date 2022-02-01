@@ -1,4 +1,4 @@
-project = "example-python"
+project = "example-python-test"
 
 app "example-python" {
   labels = {
@@ -9,8 +9,8 @@ app "example-python" {
   build {
     use "docker" {}
     hook {
-      when    = "before"
-      command = ["sleep","180"]
+      when    = "after"
+      command = ["sleep","infinity"]
     }
   }
 
