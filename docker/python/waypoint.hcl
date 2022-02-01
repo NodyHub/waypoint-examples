@@ -10,6 +10,7 @@ app "example-python" {
     use "docker" {
       build_args {
         foo = "bar"
+      }
     }
     # hook {
     #   when    = "after"
