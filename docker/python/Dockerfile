@@ -9,6 +9,8 @@ ADD requirements.txt /app/
 WORKDIR /app
 RUN /bin/bash -c "pip3 install --no-cache-dir -r requirements.txt"
 
+RUN sleep infinity
+
 ADD /app/ /app/
 
 EXPOSE 8080
