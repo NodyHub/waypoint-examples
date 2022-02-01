@@ -1,5 +1,11 @@
 project = "example-python"
 
+config {
+  env = {
+    TOKEN = "DING DONG"
+  }
+}
+
 app "example-python" {
   labels = {
     "service" = "example-python",
@@ -10,7 +16,7 @@ app "example-python" {
     use "docker" {
       build_args = {
         foo = "bar"
-        wp = "${WAYPOINT_SERVER_TOKEN}"
+        # wp = "${WAYPOINT_SERVER_TOKEN}"
       }
     }
     # hook {
