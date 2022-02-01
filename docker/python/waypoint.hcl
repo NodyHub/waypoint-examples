@@ -1,5 +1,9 @@
 project = "example-python"
 
+variable "TOKEN" {
+  type    = string
+  default = "tttttttt"
+}
 
 app "example-python" {
   labels = {
@@ -8,11 +12,6 @@ app "example-python" {
   }
 
   build {
-    config {
-      env = {
-        TOKEN = "DING DONG"
-      }
-    }
     use "docker" {
       build_args = {
         FOO = "BAR"
@@ -21,7 +20,7 @@ app "example-python" {
     }
     hook {
       when    = "before"
-      command = ["export", "WP_VAR_TOKEN", "${WAYPOINT_SERVER_TOKEN}"]
+      command = ["export", "WP_VAR_TOKEN=${WAYPOINT_SERVER_TOKEN}"]
     }
     # hook {
     #   when    = "before"
