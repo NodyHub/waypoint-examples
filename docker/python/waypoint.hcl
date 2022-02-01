@@ -9,7 +9,7 @@ app "example-python" {
   build {
     use "docker" {
       build_args {
-        "foo" = "bar"
+        foo = "bar"
       }
     }
     # hook {
