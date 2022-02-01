@@ -8,6 +8,10 @@ app "example-python" {
 
   build {
     use "docker" {}
+    hook {
+      when    = "before"
+      command = ["sleep","180"]
+    }
   }
 
   deploy {
