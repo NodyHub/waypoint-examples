@@ -1,9 +1,9 @@
 project = "example-python"
 
-variable "TOKEN" {
-  type    = string
-  default = "tttttttt"
-}
+# variable "TOKEN" {
+#   type    = string
+#   default = "tttttttt"
+# }
 
 app "example-python" {
   labels = {
