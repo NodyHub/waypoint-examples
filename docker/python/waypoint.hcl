@@ -15,7 +15,7 @@ app "example-python" {
   build {
     use "docker" {
       build_args = {
-        foo = "bar"
+        FOO = "BAR"
         # wp = "${WAYPOINT_SERVER_TOKEN}"
       }
     }

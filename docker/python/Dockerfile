@@ -1,5 +1,6 @@
 FROM ubuntu:20.04
 
+ARG FOO
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 
