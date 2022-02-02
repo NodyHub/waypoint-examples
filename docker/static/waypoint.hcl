@@ -6,6 +6,7 @@ project = "nginx-project"
 app "web" {
   build {
     use "docker" {
+      buildkit = false
     }
   }
 
