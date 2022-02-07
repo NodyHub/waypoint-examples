@@ -8,6 +8,12 @@ app "web" {
     use "docker" {
       buildkit = false
     }
+    registry {
+      use "docker" {
+        image = "docker-go"
+        tag   = "latest"
+      }
+    }
   }
 
   deploy {
