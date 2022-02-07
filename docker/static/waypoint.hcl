@@ -12,8 +12,9 @@ app "web" {
     use "docker" {}
     registry {
       use "docker" {
-        image = "foo"
+        image = "172.17.0.1:5000/foo"
         tag = "latest"
+        insecure = true
       }
     }
   }
