@@ -9,13 +9,9 @@ runner {
 
 app "web" {
   build {
-    use "docker" {
-      buildkit = false
-    }
+    use "docker" {}
     registry {
-      use "docker" {
-        tag   = "latest"
-      }
+      use "docker" {}
     }
   }
 
