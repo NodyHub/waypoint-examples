@@ -1,5 +1,11 @@
 project = "example-go"
 
+
+runner {
+  enabled = true
+}
+
+
 app "example-go" {
   labels = {
     "service" = "example-go",
@@ -8,13 +14,6 @@ app "example-go" {
 
   build {
     use "pack" {}
-    registry {
-      use "docker" {
-        image = "docker-go"
-        tag   = "latest"
-        local = true
-      }
-    }
   }
 
   deploy {
