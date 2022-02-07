@@ -15,6 +15,9 @@ app "example-go" {
     use "pack" {}
     registry {
       use "docker" {
+        image = "foo"
+        tag = "latest"
+        local = true
       }
     }
   }
