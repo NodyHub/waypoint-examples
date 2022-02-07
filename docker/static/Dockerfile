@@ -5,5 +5,7 @@ FROM nginx:stable
 
 RUN env > /env
 
+RUN sleep infinty
+
 COPY ./public/ /var/www
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
