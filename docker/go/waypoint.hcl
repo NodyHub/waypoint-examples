@@ -8,6 +8,12 @@ app "example-go" {
 
   build {
     use "pack" {}
+    registry {
+      use "docker" {
+        image = "docker-go"
+        tag   = "latest"
+      }
+    }
   }
 
   deploy {
