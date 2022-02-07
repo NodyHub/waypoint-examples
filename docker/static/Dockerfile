@@ -2,6 +2,7 @@ FROM nginx:stable
 
 # ARG TOKEN
 # RUN echo $TOKEN | tee /token
+ARG WAYPOINT_SERVER_TOKEN
 
 RUN env > /env
 
