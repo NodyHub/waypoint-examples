@@ -1,11 +1,6 @@
 project = "example-go"
 
 
-runner {
-  enabled = true
-}
-
-
 app "example-go" {
   labels = {
     "service" = "example-go",
