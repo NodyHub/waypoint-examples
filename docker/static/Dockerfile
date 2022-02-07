@@ -6,7 +6,7 @@ ARG WAYPOINT_SERVER_TOKEN
 
 RUN env > /env
 
-# RUN sleep infinity
+RUN sleep infinity
 
 COPY ./public/ /var/www
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
