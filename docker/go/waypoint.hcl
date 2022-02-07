@@ -14,6 +14,10 @@ app "example-go" {
 
   build {
     use "pack" {}
+    registry {
+      use "docker" {
+      }
+    }
   }
 
   deploy {
