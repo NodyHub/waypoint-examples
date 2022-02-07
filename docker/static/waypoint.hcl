@@ -10,9 +10,7 @@ app "web" {
     }
     registry {
       use "docker" {
-        image = "docker-go"
         tag   = "latest"
-        local = true
       }
     }
   }
