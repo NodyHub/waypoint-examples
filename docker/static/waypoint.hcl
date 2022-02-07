@@ -9,6 +9,7 @@ runner {
 
 app "web" {
   build {
+    disable_entrypoint = true
     use "docker" {}
     registry {
       use "docker" {
