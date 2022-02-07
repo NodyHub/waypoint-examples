@@ -9,8 +9,9 @@ runner {
 
 app "web" {
   build {
-    disable_entrypoint = true
-    use "docker" {}
+    use "docker" {
+      disable_entrypoint = true
+    }
     registry {
       use "docker" {
         image = "172.17.0.1:5000/foo"
