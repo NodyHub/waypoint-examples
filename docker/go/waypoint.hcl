@@ -12,6 +12,7 @@ app "example-go" {
       use "docker" {
         image = "docker-go"
         tag   = "latest"
+        local = true
       }
     }
   }
