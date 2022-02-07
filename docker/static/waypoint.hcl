@@ -11,7 +11,10 @@ app "web" {
   build {
     use "docker" {}
     registry {
-      use "docker" {}
+      use "docker" {
+        image = "foo"
+        tag = "latest"
+      }
     }
   }
 
