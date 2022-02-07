@@ -12,7 +12,9 @@ app "example-go" {
   }
 
   build {
-    use "pack" {}
+    use "pack" {
+      disable_entrypoint = true
+    }
     registry {
       use "docker" {
         image = "foo"
