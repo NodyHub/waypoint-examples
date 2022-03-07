@@ -3,14 +3,14 @@ project = "nginx-project"
 # Labels can be specified for organizational purposes.
 # labels = { "foo" = "bar" }
 
-runner {
-  enabled = true
-}
+# runner {
+#   enabled = true
+# }
 
 app "web" {
   build {
     use "docker" {
-      disable_entrypoint = false
+      # disable_entrypoint = false
     }
     registry {
       use "docker" {
@@ -26,3 +26,4 @@ app "web" {
     }
   }
 }
+
