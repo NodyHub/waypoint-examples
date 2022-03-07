@@ -1,3 +1,6 @@
+# waypoint init
+# waypoint build -local=false
+
 project = "nginx-project"
 
 # Labels can be specified for organizational purposes.
@@ -6,6 +9,15 @@ project = "nginx-project"
 # runner {
 #   enabled = true
 # }
+
+runner {
+  enabled = true
+
+  data_source "git" {
+    url  = "https://github.com/NodyHub/waypoint-examples.git"
+    path = "docker/static"
+  }
+}
 
 app "web" {
   build {
@@ -26,4 +38,3 @@ app "web" {
     }
   }
 }
-
